@@ -1,0 +1,169 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: -200px;
+  margin-bottom: -80px;
+}
+
+.card {
+  background-color: darkblue;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 30);
+  padding: 16px;
+  border-radius: 30px;
+  width: 500px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -130px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: skyblue;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black; /* Add a border with a color of dark red */
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-top: 50px; */
+  width: 300px; /* Make the button wider */
+  transition: border-color 0.3s ease-in-out; /* Add a transition for the border color */
+}
+
+.button:hover {
+  border-color: darkred; /* Change the border color on hover */
+}
+
+.card h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 8px 0;
+}
+
+.heading {
+  font-size: 5vw;
+  text-shadow: 4px 4px 0px darkred;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+  margin-bottom: -150px !important;
+  margin-top: 50px !important; /* Add margin at the bottom to create spacing */
+  color: darkgoldenrod;
+}
+
+.last{
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 30px Varela Round, sans-serif;
+  height: 0px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -90px 0 0 0;
+  position: absolute;
+  text-align: right;
+  text-transform: uppercase;
+  /* top: 50%; */
+  /* width: 100%; */
+  animation: move linear 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);  
+  font-weight: bold;
+  margin-left: 450px;
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.entry-fee {
+  color: white;
+}
+
+.fee {
+  color: skyblue;
+}
+
+.h1 span {
+  margin-top: -50px !important;
+}
+
+.fund1 {
+  color:skyblue;
+  font-weight: bold;
+}
+
+.fund2 {
+  color: darkgoldenrod;
+  text-decoration: solid;
+}
+
+

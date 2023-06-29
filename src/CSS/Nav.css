@@ -1,0 +1,80 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: hwb(240 95% 2%);
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 30px !important;
+  }
+  
+  
+  .connect-button {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(156, 28, 28, 0.3));
+    font-size: 50px;
+   
+    
+  }
+  
+  /* .waviy span {
+    font-family: "Alfa Slab One", cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+  } */
+  @keyframes waviy {
+    0%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .waviy span {
+    font-family: "Alfa Slab One";
+    position: relative;
+    display: inline-block;
+    color: darkblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
+  .waviy:hover span {
+    animation: waviy 1s infinite; /* Run the waviy animation on hover */
+  }
+  
+  @keyframes initialAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .waviy span {
+    animation: initialAnimation 1s ease-in-out; /* Run the initialAnimation on page load */
+  }
+  
